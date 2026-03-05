@@ -13,7 +13,7 @@ const FetchItems = () => {
     const controller = new AbortController();
     const signal = controller.signal;
     // dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("https://myntra-clone-with-react-redux-and-node.onrender.com", {signal})
+    fetch("https://myntra-clone-with-react-redux-and-node.onrender.com/items", {signal})
     .then((res) => res.json())
     .then(({items}) => {
       // dispatch(fetchStatusActions.markFetchDone());
